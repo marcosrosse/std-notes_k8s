@@ -24,7 +24,7 @@ Criar um pod, namespace, etc
 
   kubectl create namespace meuNameSpace
 
-  kubectl run nginx --image=nginx --dry-run=client -o yaml
+  kubectl run nginx --image=nginx --dry-run=client -o yaml ou kubectl run nginx --image nginx --namespace web --port 80 --dry-run=client -o  yaml  > nginx.yml
 
 	  apiVersion: v1
 	kind: Pod
@@ -46,7 +46,7 @@ Criar um pod, namespace, etc
 
 Expor um pod (criando um service)
   
-  kubectl expose pod nginx (apenas quando o pod tem um containerPort configurado)
+  kubectl expose pod nginx (apenas quando o pod tem um containerPort configurado. A  partir do momento que fizer isso, ele criara um service deste meu pod)
 
   kubectl describe service nginx
 
