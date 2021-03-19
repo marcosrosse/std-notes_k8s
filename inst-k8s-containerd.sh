@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## Install and configure Kubernetes with containerD insted docker
+
 apt-get update -y && apt-get install -y socat ebtables conntrack
 
 cat > /etc/modules-load.d/k8s.conf << EOF
