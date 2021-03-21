@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Install and configure Kubernetes with containerD insted docker
+## Install and configure Kubernetes with containerD instead docker
 
 apt-get update -y && apt-get install -y socat ebtables conntrack
 
