@@ -50,3 +50,10 @@ Expor um pod (criando um service)
 
   kubectl describe service nginx
 
+Escalar meu deployment
+  
+  kubectl -n meunamespace scale deployment/simpleapp-deployment --replicas=10
+
+Atualizar a versao  de uma ou mais imagens do meu deployment
+  
+  kubectl set image deployment/simpleapp-deployment (esse simpleapp-python eh o name da spec containers) simpleapp-python=marcosrossem/simple-app-python:versaoX
