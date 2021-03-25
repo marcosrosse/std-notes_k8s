@@ -4,6 +4,11 @@ kubectl explain node, pod, services, etc...
 Recuperar token
   kubeadm token create --print-join-command
 
+Add-ons:
+https://kubernetes.io/docs/concepts/cluster-administration/networking/
+https://chrislovecnm.com/kubernetes/cni/choosing-a-cni-provider/
+https://kubernetes.io/docs/concepts/cluster-administration/addons/
+
 Get de nodes, namespaces, etc
   kubectl get nodes
   
